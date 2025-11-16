@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AYAN Landmark Scanner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <style>
+      :root {
+        --background: 43 44% 92%;
+        --foreground: 165 37% 26%;
+        --card: 0 0% 100%;
+        --card-foreground: 165 37% 26%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 165 37% 26%;
+        --primary: 165 37% 26%;
+        --primary-foreground: 43 44% 92%;
+        --secondary: 43 44% 89%;
+        --secondary-foreground: 165 37% 26%;
+        --muted: 43 44% 89%;
+        --muted-foreground: 240 4% 48%;
+        --accent: 43 34% 54%;
+        --accent-foreground: 165 41% 17%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 43 30% 85%;
+        --input: 43 30% 85%;
+        --ring: 165 37% 26%;
+        --radius: 0.625rem;
+      }
+
+      .dark {
+        --background: 165 41% 17%;
+        --foreground: 43 44% 92%;
+        --card: 165 37% 26%;
+        --card-foreground: 43 44% 92%;
+        --popover: 165 41% 17%;
+        --popover-foreground: 43 44% 92%;
+        --primary: 43 44% 92%;
+        --primary-foreground: 165 41% 17%;
+        --secondary: 165 37% 26%;
+        --secondary-foreground: 43 44% 92%;
+        --muted: 165 37% 26%;
+        --muted-foreground: 0 0% 81%;
+        --accent: 43 34% 54%;
+        --accent-foreground: 43 44% 92%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 165 37% 26%;
+        --input: 165 37% 26%;
+        --ring: 43 44% 92%;
+      }
+
+      * {
+        border-color: hsl(var(--border));
+      }
+      body {
+        background-color: hsl(var(--background));
+        color: hsl(var(--foreground));
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+                border: 'hsl(var(--border))',
+                input: 'hsl(var(--input))',
+                ring: 'hsl(var(--ring))',
+                background: 'hsl(var(--background))',
+                foreground: 'hsl(var(--foreground))',
+                primary: {
+                    DEFAULT: 'hsl(var(--primary))',
+                    foreground: 'hsl(var(--primary-foreground))',
+                },
+                secondary: {
+                    DEFAULT: 'hsl(var(--secondary))',
+                    foreground: 'hsl(var(--secondary-foreground))',
+                },
+                destructive: {
+                    DEFAULT: 'hsl(var(--destructive))',
+                    foreground: 'hsl(var(--destructive-foreground))',
+                },
+                muted: {
+                    DEFAULT: 'hsl(var(--muted))',
+                    foreground: 'hsl(var(--muted-foreground))',
+                },
+                accent: {
+                    DEFAULT: 'hsl(var(--accent))',
+                    foreground: 'hsl(var(--accent-foreground))',
+                },
+                popover: {
+                    DEFAULT: 'hsl(var(--popover))',
+                    foreground: 'hsl(var(--popover-foreground))',
+                },
+                card: {
+                    DEFAULT: 'hsl(var(--card))',
+                    foreground: 'hsl(var(--card-foreground))',
+                },
+            },
+            borderRadius: {
+              '5xl': '2.5rem',
+              '4xl': '2rem',
+              lg: 'var(--radius)',
+              md: 'calc(var(--radius) - 2px)',
+              sm: 'calc(var(--radius) - 4px)',
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-background flex items-center justify-center min-h-screen">
+    <div id="root"></div>
+  </body>
+</html>

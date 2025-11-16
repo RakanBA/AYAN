@@ -1,0 +1,7 @@
+{
+  "name": "AYAN Landmark Scanner",
+  "description": "An interactive web application to scan, discover, and learn about landmarks. Features a simulated scanning experience, an explorable landmark database, and a persistent rewards system.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

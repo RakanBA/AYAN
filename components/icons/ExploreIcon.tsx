@@ -1,0 +1,21 @@
+
+import type React from 'react';
+
+export const ExploreIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <circle cx="12" cy="12" r="10" />
+    <path d="m14.31 8-2.31 6-6-2.31 2.31-6z" />
+    <circle cx="12" cy="12" r="2" />
+  </svg>
+);

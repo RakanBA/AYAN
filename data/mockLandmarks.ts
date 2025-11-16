@@ -1,0 +1,161 @@
+
+import type { Landmark } from '../types';
+
+export const mockLandmarks: Landmark[] = [
+  {
+    id: '1',
+    name: { en: 'Al-Matbouli Museum', ar: 'متحف المتبولي' },
+    built: '16th Century',
+    image: 'https://picsum.photos/seed/matbouli/400/300',
+    region: { en: 'Jeddah (Al-Balad)', ar: 'جدة (البلد)' },
+    category: { en: 'Historic', ar: 'تاريخي' },
+    description: {
+      en: 'A traditional Hijazi house turned into a private museum, offering a glimpse into the historic life and culture of Jeddah.',
+      ar: 'بيت حجازي تقليدي تحول إلى متحف خاص، يقدم لمحة عن الحياة التاريخية والثقافة في جدة.',
+    },
+  },
+  {
+    id: '2',
+    name: { en: 'Bab Jadid', ar: 'باب جديد' },
+    built: '19th Century',
+    image: 'https://picsum.photos/seed/babjadid/400/300',
+    region: { en: 'Jeddah (Al-Balad)', ar: 'جدة (البلد)' },
+    category: { en: 'Historic', ar: 'تاريخي' },
+    description: {
+      en: 'Meaning "New Gate," this is one of the historic gates that once fortified the old city of Jeddah, now standing as a monument.',
+      ar: 'أحد الأبواب التاريخية التي كانت تحصن مدينة جدة القديمة، وهو الآن نصب تذكاري قائم.',
+    },
+  },
+  {
+    id: '3',
+    name: { en: 'Baeshen Museum', ar: 'متحف باعشن' },
+    built: '1853',
+    image: 'https://picsum.photos/seed/baeshen/400/300',
+    region: { en: 'Jeddah (Al-Balad)', ar: 'جدة (البلد)' },
+    category: { en: 'Historic', ar: 'تاريخي' },
+    description: {
+      en: 'A historic house in Al-Balad showcasing cultural artifacts, traditional Islamic art, and the rich heritage of the region.',
+      ar: 'بيت تاريخي في البلد يعرض القطع الأثرية الثقافية والفن الإسلامي التقليدي والتراث الغني للمنطقة.',
+    },
+  },
+  {
+    id: '4',
+    name: { en: 'Beit Abdullah O. Matbouli', ar: 'بيت عبد الله عمر المتبولي' },
+    built: '19th Century',
+    image: 'https://picsum.photos/seed/aomatbouli/400/300',
+    region: { en: 'Jeddah (Al-Balad)', ar: 'جدة (البلد)' },
+    category: { en: 'Historic', ar: 'تاريخي' },
+    description: {
+      en: 'A beautifully preserved example of Roshan architecture in old Jeddah, known for its intricate wooden latticework.',
+      ar: 'مثال محفوظ بشكل جميل على عمارة الرواشين في جدة القديمة، يشتهر بشبكياته الخشبية المعقدة.',
+    },
+  },
+  {
+    id: '5',
+    name: { en: 'Beit Al-Rayess', ar: 'بيت الريس' },
+    built: '19th Century',
+    image: 'https://picsum.photos/seed/alrayess/400/300',
+    region: { en: 'Jeddah (Al-Balad)', ar: 'جدة (البلد)' },
+    category: { en: 'Historic', ar: 'تاريخي' },
+    description: {
+      en: 'A historical residence notable for its stunning Roshan windows and traditional Hijazi architectural style.',
+      ar: 'مسكن تاريخي يشتهر بنوافذه الرواشين المذهلة والطراز المعماري الحجازي التقليدي.',
+    },
+  },
+  {
+    id: '6',
+    name: { en: 'Beit Al-Sharbatly', ar: 'بيت الشربتلي' },
+    built: '1916',
+    image: 'https://picsum.photos/seed/sharbatly/400/300',
+    region: { en: 'Jeddah (Al-Balad)', ar: 'جدة (البلد)' },
+    category: { en: 'Historic', ar: 'تاريخي' },
+    description: {
+      en: 'A famous multi-story house built from coral stone, representing the unique architectural heritage of Jeddah\'s old town.',
+      ar: 'بيت شهير متعدد الطوابق مبني من الحجر المرجاني، يمثل التراث المعماري الفريد لمدينة جدة القديمة.',
+    },
+  },
+  {
+    id: '7',
+    name: { en: 'Beit Badib', ar: 'بيت باديب' },
+    built: '18th Century',
+    image: 'https://picsum.photos/seed/badib/400/300',
+    region: { en: 'Jeddah (Al-Balad)', ar: 'جدة (البلد)' },
+    category: { en: 'Historic', ar: 'تاريخي' },
+    description: {
+      en: 'An old merchant house that reflects the rich trading history of Jeddah, featuring characteristic Hijazi design.',
+      ar: 'بيت تاجر قديم يعكس تاريخ جدة التجاري الغني، ويتميز بتصميم حجازي مميز.',
+    },
+  },
+  {
+    id: '8',
+    name: { en: 'Beit Jokhdar', ar: 'بيت جوخدار' },
+    built: '19th Century',
+    image: 'https://picsum.photos/seed/jokhdar/400/300',
+    region: { en: 'Jeddah (Al-Balad)', ar: 'جدة (البلد)' },
+    category: { en: 'Historic', ar: 'تاريخي' },
+    description: {
+      en: 'Another fine example of Hijazi architecture, contributing to the unique urban fabric of the historic district.',
+      ar: 'مثال رائع آخر على العمارة الحجازية، يساهم في النسيج الحضري الفريد للمنطقة التاريخية.',
+    },
+  },
+  {
+    id: '9',
+    name: { en: 'Beit Nassif', ar: 'بيت نصيف' },
+    built: '1881',
+    image: 'https://picsum.photos/seed/nassif/400/300',
+    region: { en: 'Jeddah (Al-Balad)', ar: 'جدة (البلد)' },
+    category: { en: 'Historic', ar: 'تاريخي' },
+    description: {
+      en: 'One of Jeddah\'s most famous restored historical buildings, once a royal residence and a prominent cultural center.',
+      ar: 'أحد أشهر مباني جدة التاريخية المرممة، كان في السابق مقرًا ملكيًا ومركزًا ثقافيًا بارزًا.',
+    },
+  },
+  {
+    id: '10',
+    name: { en: 'Beit Nour Wali', ar: 'بيت نور ولي' },
+    built: '19th Century',
+    image: 'https://picsum.photos/seed/nourwali/400/300',
+    region: { en: 'Jeddah (Al-Balad)', ar: 'جدة (البلد)' },
+    category: { en: 'Historic', ar: 'تاريخي' },
+    description: {
+      en: 'A traditional house known for its unique architectural details, Roshan windows, and classic Al-Balad charm.',
+      ar: 'بيت تقليدي يشتهر بتفاصيله المعمارية الفريدة ونوافذه الرواشين وسحر البلد الكلاسيكي.',
+    },
+  },
+  {
+    id: '11',
+    name: { en: 'Beit Thaker', ar: 'بيت ذاكر' },
+    built: '19th Century',
+    image: 'https://picsum.photos/seed/thaker/400/300',
+    region: { en: 'Jeddah (Al-Balad)', ar: 'جدة (البلد)' },
+    category: { en: 'Historic', ar: 'تاريخي' },
+    description: {
+      en: 'A historic building that tells the story of Jeddah\'s past generations through its preserved architecture and design.',
+      ar: 'مبنى تاريخي يروي قصة أجيال جدة الماضية من خلال هندسته المعمارية وتصميمه المحفوظ.',
+    },
+  },
+  {
+    id: '12',
+    name: { en: 'Beit Xenel', ar: 'بيت زينل' },
+    built: '19th Century',
+    image: 'https://picsum.photos/seed/xenel/400/300',
+    region: { en: 'Jeddah (Al-Balad)', ar: 'جدة (البلد)' },
+    category: { en: 'Historic', ar: 'تاريخي' },
+    description: {
+      en: 'An old, significant house in the Al-Balad district, showcasing the blend of cultures in the historic port city.',
+      ar: 'بيت قديم ومهم في منطقة البلد، يعرض مزيج الثقافات في المدينة الساحلية التاريخية.',
+    },
+  },
+  {
+    id: '13',
+    name: { en: 'Tariq Abdulhakim Center', ar: 'مركز طارق عبد الحكيم' },
+    built: '19th Century',
+    image: 'https://picsum.photos/seed/tariq/400/300',
+    region: { en: 'Jeddah (Al-Balad)', ar: 'جدة (البلد)' },
+    category: { en: 'Historic', ar: 'تاريخي' },
+    description: {
+      en: 'A center for Saudi heritage and music, housed in a historic building, dedicated to the famous musician Tariq Abdulhakim.',
+      ar: 'مركز للتراث والموسيقى السعودية، يقع في مبنى تاريخي، مخصص للموسيقار الشهير طارق عبد الحكيم.',
+    },
+  },
+];
